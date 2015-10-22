@@ -150,6 +150,7 @@ public class AnimationCreator : MonoBehaviour {
 			// JSON -> Formatter, Coverter, Handler
 		// Edit sprite -> 9 sliced
 		// Override the source image for each target background
+		// this.transform.parent.gameObject.GetComponent<RectTransform>();
 		foreach(Image image in temp) {
 			Debug.Log(image.ToString());
 		}

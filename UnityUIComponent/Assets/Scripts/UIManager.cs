@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour {
 
@@ -22,6 +23,8 @@ public class UIManager : MonoBehaviour {
 	public float DumpDepth = 4;
 	public float ShadowDepth = 6;
 
+	public GameObject[] backGroundObjects;
+
 	// Init UI States
 
 
@@ -36,6 +39,8 @@ public class UIManager : MonoBehaviour {
 			anim.SetDumpDepth(DumpDepth);
 			anim.SetShadowDepth(ShadowDepth);
 		}
+
+		backGroundObjects = GameObject.FindGameObjectsWithTag("ContentBackground");
 	}
 	
 	// Update is called once per frame
@@ -130,6 +135,21 @@ public class UIManager : MonoBehaviour {
 
 	public void GoToScene(string sceneName) {
 		Application.LoadLevel(sceneName);
+	}
+
+	public void ChangeColor(string hexString) {
+		Color targetColor = ConvertHexToColor(hexString);
+		foreach(GameObject go in backGroundObjects) {
+			go.GetComponent<Image>().color = targetColor;
+		}
+	}
+
+	private Color ConvertHexToColor(string src) {
+		byte r = byte.Parse(src.Substring(0,2), System.Globalization.NumberStyles.HexNumber);
+		byte g = byte.Parse(src.Substring(2,2), System.Globalization.NumberStyles.HexNumber);
+		byte b = byte.Parse(src.Substring(4,2), System.Globalization.NumberStyles.HexNumber);
+		byte a = byte.Parse(src.Substring(6,2), System.Globalization.NumberStyles.HexNumber);
+		return new Color(r, g, b, a);
 	}
 
 }
