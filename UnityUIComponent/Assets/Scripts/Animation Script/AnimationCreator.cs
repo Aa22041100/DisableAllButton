@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(Animation))]
 public class AnimationCreator : MonoBehaviour {
@@ -141,6 +142,17 @@ public class AnimationCreator : MonoBehaviour {
 
 	public void SetShadowDepth(float shadowDepth) {
 		this.ShadowDepth = shadowDepth;
+	}
+
+	public void ChangeBG() {
+		Image[] temp = this.GetComponentsInChildren<Image>();
+		// Recieve Bg from json and get info from json
+			// JSON -> Formatter, Coverter, Handler
+		// Edit sprite -> 9 sliced
+		// Override the source image for each target background
+		foreach(Image image in temp) {
+			Debug.Log(image.ToString());
+		}
 	}
 
 }
