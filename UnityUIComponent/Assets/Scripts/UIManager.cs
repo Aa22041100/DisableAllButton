@@ -80,6 +80,7 @@ public class UIManager : MonoBehaviour {
 			OptionButton.GetAnimation().Blend ("UnclickedClip", 0.1f, 0.05f);
 			OptionButton.SetClicked(false);
 		}
+		ShowSubPanel();
 	}
 
 	public void SoundButtonIsClicked() {
@@ -100,6 +101,10 @@ public class UIManager : MonoBehaviour {
 			LeaderBoardButton.GetAnimation().Blend ("UnclickedClip", 0.1f, 0.05f);
 			LeaderBoardButton.SetClicked(false);
 		}
+	}
+
+	public void ThemeRedIsClicked() {
+
 	}
 
 	public void TestButtonIsHighlighted(bool isHighlighted) {
@@ -149,7 +154,7 @@ public class UIManager : MonoBehaviour {
 		byte g = byte.Parse(src.Substring(2,2), System.Globalization.NumberStyles.HexNumber);
 		byte b = byte.Parse(src.Substring(4,2), System.Globalization.NumberStyles.HexNumber);
 		byte a = byte.Parse(src.Substring(6,2), System.Globalization.NumberStyles.HexNumber);
-		return new Color(r, g, b, a);
+		return new Color32 (r, g, b, a);
 	}
 
 }

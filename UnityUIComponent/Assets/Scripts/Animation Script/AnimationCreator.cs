@@ -22,25 +22,67 @@ public class AnimationCreator : MonoBehaviour {
 		clip.name = "Awake";
 		clip.legacy = true;
 		clip.frameRate = 60;
+		/*
+		// Scale from 0 -> 1.2(150f) -> 1(150f)
+		clip.SetCurve("", typeof(RectTransform), "m_LocalScale.x",
+		              new AnimationCurve(
+						// Start from scale x 0
+						new Keyframe(0, 0, 0, 0),
+						// Scale to 1.2
+						new Keyframe(100f, 1.2f, 0, 0),
+						// back to normal
+						new Keyframe(150f, 1f, 0, 0)
+			));
+
+		clip.SetCurve("", typeof(RectTransform), "m_LocalScale.y",
+		              new AnimationCurve(
+						// Start from scale y 0
+						new Keyframe(0, 0, 0, 0),
+						// Scale to 1.2
+						new Keyframe(100f, 1.2f, 0, 0),
+						// back to normal
+						new Keyframe(150f, 1f, 0, 0)
+			));
+
+		clip.SetCurve("", typeof(RectTransform), "m_LocalScale.z",
+		              new AnimationCurve(
+						// Start from scale y 0
+						new Keyframe(0, 0, 0, 0),
+						// Scale to 1.2
+						new Keyframe(100f, 1.2f, 0, 0),
+						// back to normal
+						new Keyframe(150f, 1f, 0, 0)
+			));
+		*/
 		clip.SetCurve("", typeof(RectTransform), "m_AnchoredPosition.x", 
 					  new AnimationCurve(
 						// Start from Starting Pos X
 						new Keyframe(0, startingPos.x, 0, 0),
-						new Keyframe(100f, startingPos.x, 0, 0),
+						new Keyframe(150f, startingPos.x, 0, 0),
 						// Dump effect
-						new Keyframe(150f, startingPos.x - DumpEffectDepth, 0, 0),
+						new Keyframe(200f, startingPos.x - DumpEffectDepth, 0, 0),
 						// Apply Shadow Depth to Starting Pos X
-						new Keyframe(200f, startingPos.x + ShadowDepth, 0, 0)));
+						new Keyframe(250f, startingPos.x + ShadowDepth, 0, 0),
+						// Top Dump Effect
+						new Keyframe(275f, startingPos.x + ShadowDepth - DumpEffectDepth/2, 0, 0),
+						// Back To Shadow Depth + Starting pos x
+						new Keyframe(300f, startingPos.x + ShadowDepth, 0, 0)
+			));
 		     
 		clip.SetCurve("", typeof(RectTransform), "m_AnchoredPosition.y",
 		              new AnimationCurve(
 						// Start from Starting Pos Y
 						new Keyframe(0, startingPos.y, 0, 0),
-						new Keyframe(100f, startingPos.y, 0 , 0),
+						new Keyframe(150f, startingPos.y, 0 , 0),
 						// Dump effect
-						new Keyframe(150f, startingPos.y - DumpEffectDepth, 0, 0),
+						new Keyframe(200f, startingPos.y - DumpEffectDepth, 0, 0),
 						// Apply Shadow Depth to Starting Pos Y
-						new Keyframe(200f, startingPos.y + ShadowDepth, 0, 0)));
+						new Keyframe(250f, startingPos.y + ShadowDepth, 0, 0),
+						// Top Dump Effect
+						new Keyframe(275f, startingPos.y + ShadowDepth - DumpEffectDepth/2, 0, 0),
+						// Back to shadow depath + starting pos y
+						new Keyframe(300f, startingPos.y + ShadowDepth, 0, 0)
+			));
 		anim.AddClip(clip, clip.name);
 		anim.Play(clip.name);
 
@@ -51,13 +93,21 @@ public class AnimationCreator : MonoBehaviour {
 		clip.SetCurve("", typeof(RectTransform), "m_AnchoredPosition.x",
 		              new AnimationCurve(
 						// Stay at current point
-						new Keyframe(0, startingPos.x + ShadowDepth, 0, 0)
+						new Keyframe(0, startingPos.x + ShadowDepth, 0, 0),
+						// Dump effect
+						new Keyframe(50f, startingPos.x - DumpEffectDepth, 0, 0),
+						// Back to idle pos x
+						new Keyframe(100f, startingPos.x + ShadowDepth, 0, 0)
 			));
 
 		clip.SetCurve("", typeof(RectTransform), "m_AnchoredPosition.y",
 		              new AnimationCurve(
 						// Stay at current point
-						new Keyframe(0, startingPos.y + ShadowDepth, 0, 0)
+						new Keyframe(0, startingPos.y + ShadowDepth, 0, 0),
+						// Dump Effect
+						new Keyframe(50f, startingPos.y - DumpEffectDepth, 0, 0),
+						// Back to idle pos y
+						new Keyframe(100f, startingPos.y + ShadowDepth, 0, 0)
 			));
 
 		anim.AddClip(clip, clip.name);
@@ -72,9 +122,9 @@ public class AnimationCreator : MonoBehaviour {
 						// Start from current point
 						new Keyframe(0, startingPos.x + ShadowDepth, 0, 0),
 						// Dump Effect
-//						new Keyframe(0.06f, startingPos.x - DumpEffectDepth),
+						new Keyframe(25f, startingPos.x - DumpEffectDepth, 0, 0),
 						// Back to starting pos x
-						new Keyframe(10f, startingPos.x, 0, 0)
+						new Keyframe(60f, startingPos.x, 0, 0)
 			));
 
 		clip.SetCurve("", typeof(RectTransform), "m_AnchoredPosition.y",
@@ -82,9 +132,9 @@ public class AnimationCreator : MonoBehaviour {
 						// Start from current point
 						new Keyframe(0, startingPos.y + ShadowDepth, 0, 0),
 						// Dump effect
-//						new Keyframe(0.06f, startingPos.y - DumpEffectDepth),
+						new Keyframe(25f, startingPos.y - DumpEffectDepth, 0, 0),
 						// Back to starting pos y
-						new Keyframe(10f, startingPos.y, 0, 0)
+						new Keyframe(60f, startingPos.y, 0, 0)
 			));
 		anim.AddClip(clip, clip.name);
 
@@ -96,20 +146,24 @@ public class AnimationCreator : MonoBehaviour {
 		              new AnimationCurve(
 						// Start from starting pos x
 						new Keyframe(0, startingPos.x, 0 , 0),
-						// Dump Effect
-//						new Keyframe(0.06f, startingPos.x - DumpEffectDepth),
 						// Back to shadowed point
-						new Keyframe(10f, startingPos.x + ShadowDepth, 0, 0)
+						new Keyframe(25f, startingPos.x - DumpEffectDepth, 0, 0),
+						// Dump effect
+//						new Keyframe(50f, startingPos.x + ShadowDepth - DumpEffectDepth/5, 0, 0),
+						// Back to shadowed point
+						new Keyframe(50f, startingPos.x + ShadowDepth, 0, 0)
 			));
 		
 		clip.SetCurve("", typeof(RectTransform), "m_AnchoredPosition.y",
 		              new AnimationCurve(
 						// Start from starting pos y
 						new Keyframe(0, startingPos.y, 0, 0),
-						// Dump Effect
-//						new Keyframe(0.06f, startingPos.y - DumpEffectDepth),
 						// Back to shadowed point
-						new Keyframe(10f, startingPos.y + ShadowDepth, 0, 0)
+						new Keyframe(25f, startingPos.y - DumpEffectDepth, 0, 0),
+						// Dump effect
+//						new Keyframe(50f, startingPos.y + ShadowDepth - DumpEffectDepth/5, 0, 0),
+						// Back to shadowed point
+						new Keyframe(50f, startingPos.y + ShadowDepth, 0, 0)
 			));
 		anim.AddClip(clip, clip.name);
 
