@@ -2632,7 +2632,7 @@ mono_image_table:
 
 	.long 4
 	.asciz "Assembly-CSharp"
-	.asciz "85FF660E-DF6A-4336-A651-8272F692E371"
+	.asciz "A76BC9F8-8F7F-46D5-AC96-D95E313A5854"
 	.asciz ""
 	.asciz ""
 	.align 3
@@ -2678,7 +2678,7 @@ mono_aot_file_info:
 .text
 	.align 2
 mono_assembly_guid:
-	.asciz "85FF660E-DF6A-4336-A651-8272F692E371"
+	.asciz "A76BC9F8-8F7F-46D5-AC96-D95E313A5854"
 .text
 	.align 2
 mono_aot_version:
