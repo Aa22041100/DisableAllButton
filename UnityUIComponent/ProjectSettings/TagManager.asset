@@ -8,6 +8,7 @@ TagManager:
   - SelectPanelUI
   - TestButton
   - ContentBackground
+  - Fake3DUIComponent
   layers:
   - Default
   - TransparentFX
