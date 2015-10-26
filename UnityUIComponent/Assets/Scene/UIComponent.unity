@@ -363,7 +363,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11436466, guid: 00dd18cc1608347588703db608c1ec38, type: 2}
       propertyPath: isPanel
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11436466, guid: 00dd18cc1608347588703db608c1ec38, type: 2}
+      propertyPath: WhatIsIt
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 00dd18cc1608347588703db608c1ec38, type: 2}
@@ -791,10 +795,7 @@ MonoBehaviour:
   DumpEffectDepth: 6
   ShadowDepth: 4
   clicked: 0
-  isToggle: 1
-  isButton: 0
-  isPanel: 0
-  isTextbox: 0
+  WhatIsIt: 3
 --- !u!111 &277152892
 Animation:
   m_ObjectHideFlags: 0
@@ -2056,6 +2057,14 @@ Prefab:
     - target: {fileID: 169166, guid: 00dd18cc1608347588703db608c1ec38, type: 2}
       propertyPath: m_TagString
       value: ContentText
+      objectReference: {fileID: 0}
+    - target: {fileID: 11436466, guid: 00dd18cc1608347588703db608c1ec38, type: 2}
+      propertyPath: isPanel
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11436466, guid: 00dd18cc1608347588703db608c1ec38, type: 2}
+      propertyPath: WhatIsIt
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 00dd18cc1608347588703db608c1ec38, type: 2}

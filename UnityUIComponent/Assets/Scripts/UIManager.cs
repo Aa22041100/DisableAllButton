@@ -51,23 +51,6 @@ public class UIManager : MonoBehaviour {
 	void Update () {
 	
 	}
-	
-	public void ThemeRedIsClicked() {
-
-	}
-
-	public void TestButtonIsHighlighted(bool isHighlighted) {
-//		bool isHighlighted = TestButton.GetBool("isHighlight");
-//		TestButton.SetBool("isHighlight", isHighlighted);
-	}
-
-	public void TestButton3IsHighlighted(bool isHighlighted) {
-		if(isHighlighted) {
-			// TestButton3.Play("HighlightedClip");
-		} else {
-			// TestButton3.Play("Idle");
-		}
-	}
 
 	public void TriggerCustomSlider() {
 		bool isOn = TestCustomSlider.GetBool("isOn");

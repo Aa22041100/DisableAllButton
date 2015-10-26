@@ -14,10 +14,10 @@ public class AnimationCreator : MonoBehaviour {
 
 	public bool clicked = false;
 
-	public bool isToggle = true;
-	public bool isButton = false;
-	public bool isPanel = false;
-	public bool isTextbox = false;
+	public enum TypeOfUI {
+		Toggle, Button, Panel, Textbox
+	}
+	public TypeOfUI WhatIsIt;
 
 	// Use this for initialization
 	void Start () {
@@ -27,8 +27,10 @@ public class AnimationCreator : MonoBehaviour {
 
 		CreateCommonAnimation();
 
-		if(isToggle) CreateToggleAnimation();
-		if(isButton) CreateButtonAnimaton();
+		if(WhatIsIt == TypeOfUI.Toggle) CreateToggleAnimation();
+		if(WhatIsIt == TypeOfUI.Button) CreateButtonAnimaton();
+
+
 
 		foreach(AnimationState state in anim) {
 			state.speed = 200f;
@@ -253,7 +255,7 @@ public class AnimationCreator : MonoBehaviour {
 	}
 
 	public void InvokeAnimation() {
-		if(isToggle) {
+		if(WhatIsIt == TypeOfUI.Toggle) {
 			if(!clicked) {
 				this.GetAnimation().Blend("ClickedClip", 0.1f, 0.05f);
 				clicked = true;
@@ -261,11 +263,11 @@ public class AnimationCreator : MonoBehaviour {
 				this.GetAnimation().Blend("UnclickedClip", 0.1f, 0.05f);
 				clicked = false;
 			}
-		} else if(isButton) {
+		} else if(WhatIsIt == TypeOfUI.Button) {
 			this.GetAnimation().Blend ("OnclickClip", 0.1f, 0.5f);
-		} else if(isPanel) {
+		} else if(WhatIsIt == TypeOfUI.Panel) {
 			// do nothing
-		} else if(isTextbox) {
+		} else if(WhatIsIt == TypeOfUI.Textbox) {
 			// do nothing
 		}
 	}
