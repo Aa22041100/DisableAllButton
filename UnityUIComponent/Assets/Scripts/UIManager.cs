@@ -13,7 +13,7 @@ public class UIManager : MonoBehaviour {
 
 	public static float DumpDepth = 4;
 	public static float MaxShadowDepth = 10;
-	public static float ShadowDepth = 5;
+	public static float ShadowDepth = 8;
 
 	public GameObject[] backGroundObjects;
 
