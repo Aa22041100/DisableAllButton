@@ -9,6 +9,8 @@ TagManager:
   - TestButton
   - ContentBackground
   - Fake3DUIComponent
+  - ContentImage
+  - ContentText
   layers:
   - Default
   - TransparentFX

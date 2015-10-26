@@ -16,6 +16,8 @@ public class UIManager : MonoBehaviour {
 	public static float ShadowDepth = 8;
 
 	public GameObject[] backGroundObjects;
+	public GameObject[] textObjects;
+	public GameObject[] imageObjects;
 
 	// Init UI States
 
@@ -41,6 +43,8 @@ public class UIManager : MonoBehaviour {
 		}
 
 		backGroundObjects = GameObject.FindGameObjectsWithTag("ContentBackground");
+		textObjects = GameObject.FindGameObjectsWithTag("ContentText");
+		imageObjects = GameObject.FindGameObjectsWithTag("ContentImage");
 	}
 	
 	// Update is called once per frame
@@ -90,6 +94,17 @@ public class UIManager : MonoBehaviour {
 	public void ChangeColor(string hexString) {
 		Color targetColor = ConvertHexToColor(hexString);
 		foreach(GameObject go in backGroundObjects) {
+			go.GetComponent<Image>().color = targetColor;
+		}
+	}
+
+	public void ChangeContentColor(string hexString) {
+		Color targetColor = ConvertHexToColor(hexString);
+		foreach(GameObject go in textObjects) {
+			go.GetComponent<Text>().color = targetColor;
+		}
+
+		foreach(GameObject go in imageObjects) {
 			go.GetComponent<Image>().color = targetColor;
 		}
 	}

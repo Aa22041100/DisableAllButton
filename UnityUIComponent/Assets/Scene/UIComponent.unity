@@ -1674,6 +1674,10 @@ Prefab:
       propertyPath: isToggle
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 169166, guid: 00dd18cc1608347588703db608c1ec38, type: 2}
+      propertyPath: m_TagString
+      value: ContentText
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 00dd18cc1608347588703db608c1ec38, type: 2}
   m_IsPrefabParent: 0
@@ -2225,7 +2229,7 @@ GameObject:
   - 114: {fileID: 828932723}
   m_Layer: 5
   m_Name: Image
-  m_TagString: Untagged
+  m_TagString: ContentImage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2483,7 +2487,18 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: FF0000FF
+          m_StringArgument: FF837EFF
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2131565935}
+        m_MethodName: ChangeContentColor
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 000000FF
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -2500,7 +2515,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: .513725519, b: .494117647, a: 1}
   m_Sprite: {fileID: 21300000, guid: 6ceef248c7cc547e18e0fd8cdc9f73a4, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
@@ -3063,6 +3078,10 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 169166, guid: 00dd18cc1608347588703db608c1ec38, type: 2}
+      propertyPath: m_TagString
+      value: ContentText
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 00dd18cc1608347588703db608c1ec38, type: 2}
   m_IsPrefabParent: 0
@@ -3272,7 +3291,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1113631994
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3384,7 +3403,7 @@ GameObject:
   - 114: {fileID: 1170388617}
   m_Layer: 5
   m_Name: Image
-  m_TagString: Untagged
+  m_TagString: ContentImage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3646,7 +3665,7 @@ GameObject:
   - 114: {fileID: 1209887032}
   m_Layer: 5
   m_Name: Image
-  m_TagString: Untagged
+  m_TagString: ContentImage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5470,7 +5489,7 @@ GameObject:
   - 114: {fileID: 1811638166}
   m_Layer: 5
   m_Name: StarRankLbl
-  m_TagString: Untagged
+  m_TagString: ContentText
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5900,7 +5919,7 @@ GameObject:
   - 114: {fileID: 1932352580}
   m_Layer: 5
   m_Name: Lvlbl
-  m_TagString: Untagged
+  m_TagString: ContentText
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6176,7 +6195,7 @@ GameObject:
   - 114: {fileID: 1967232677}
   m_Layer: 5
   m_Name: UserNameLbl
-  m_TagString: Untagged
+  m_TagString: ContentText
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
