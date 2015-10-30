@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class ScrollBackgroundScript : MonoBehaviour {
 
@@ -20,4 +21,17 @@ public class ScrollBackgroundScript : MonoBehaviour {
 //		transform.position = startPosition + Vector3.up * newPosition;
 		transform.localPosition = startPosition + Vector3.up * newPosition;
 	}
+
+	public void ChangeColor(string hexString) {
+		this.GetComponent<Image>().color = ConvertHexToColor(hexString);
+	}
+
+	private Color ConvertHexToColor(string src) {
+		byte r = byte.Parse(src.Substring(0,2), System.Globalization.NumberStyles.HexNumber);
+		byte g = byte.Parse(src.Substring(2,2), System.Globalization.NumberStyles.HexNumber);
+		byte b = byte.Parse(src.Substring(4,2), System.Globalization.NumberStyles.HexNumber);
+		byte a = byte.Parse(src.Substring(6,2), System.Globalization.NumberStyles.HexNumber);
+		return new Color32 (r, g, b, a);
+	}
+
 }

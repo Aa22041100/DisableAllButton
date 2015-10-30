@@ -5,7 +5,7 @@ PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 7
   AndroidProfiler: 0
-  defaultScreenOrientation: 4
+  defaultScreenOrientation: 3
   targetDevice: 2
   targetResolution: 0
   accelerometerFrequency: 60
@@ -121,7 +121,7 @@ PlayerSettings:
   iOSLaunchScreenFillPct: 100
   iOSLaunchScreenSize: 100
   iOSLaunchScreenCustomXibPath: 
-  AndroidTargetDevice: 4
+  AndroidTargetDevice: 0
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
   AndroidKeystoreName: 
@@ -261,7 +261,12 @@ PlayerSettings:
   psp2InfoBarColor: 0
   psmSplashimage: {fileID: 0}
   spritePackerPolicy: 
-  scriptingDefineSymbols: {}
+  scriptingDefineSymbols:
+    1: USES_MEDIA_LIBRARY;USES_NETWORK_CONNECTIVITY;USES_WEBVIEW
+    4: USES_MEDIA_LIBRARY;USES_NETWORK_CONNECTIVITY;USES_WEBVIEW
+    7: USES_MEDIA_LIBRARY;USES_NETWORK_CONNECTIVITY;USES_WEBVIEW
+    14: USES_MEDIA_LIBRARY;USES_NETWORK_CONNECTIVITY;USES_WEBVIEW
+    15: USES_MEDIA_LIBRARY;USES_NETWORK_CONNECTIVITY;USES_WEBVIEW
   metroPackageName: UnityUIComponent
   metroPackageLogo: 
   metroPackageLogo140: 

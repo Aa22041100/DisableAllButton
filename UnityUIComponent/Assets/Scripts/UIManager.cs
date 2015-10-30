@@ -18,6 +18,7 @@ public class UIManager : MonoBehaviour {
 	public GameObject[] backGroundObjects;
 	public GameObject[] textObjects;
 	public GameObject[] imageObjects;
+	public GameObject[] textboxTextObjects;
 
 	// Init UI States
 
@@ -45,6 +46,7 @@ public class UIManager : MonoBehaviour {
 		backGroundObjects = GameObject.FindGameObjectsWithTag("ContentBackground");
 		textObjects = GameObject.FindGameObjectsWithTag("ContentText");
 		imageObjects = GameObject.FindGameObjectsWithTag("ContentImage");
+		textboxTextObjects = GameObject.FindGameObjectsWithTag("TextboxText");
 	}
 	
 	// Update is called once per frame
@@ -89,6 +91,13 @@ public class UIManager : MonoBehaviour {
 
 		foreach(GameObject go in imageObjects) {
 			go.GetComponent<Image>().color = targetColor;
+		}
+	}
+
+	public void ChangeTextboxTextColor(string hexString) {
+		Color targetColor = ConvertHexToColor(hexString);
+		foreach (GameObject go in textboxTextObjects) {
+			go.GetComponent<Text>().color = targetColor;
 		}
 	}
 

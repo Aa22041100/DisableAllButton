@@ -11,6 +11,7 @@ TagManager:
   - Fake3DUIComponent
   - ContentImage
   - ContentText
+  - TextboxText
   layers:
   - Default
   - TransparentFX
