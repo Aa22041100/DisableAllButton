@@ -52,9 +52,11 @@
      <Compile Include="Assets\EasyMovieTexture\Scripts\MediaPlayerFullScreenCtrl.cs" />
      <Compile Include="Assets\EasyMovieTexture\Scripts\SphereMirror.cs" />
      <Compile Include="Assets\EasyMovieTexture\Scripts\VideoCopyTexture.cs" />
+     <Compile Include="Assets\Scripts\AdsCtrl.cs" />
      <Compile Include="Assets\Scripts\Animation Script\AnimationCreator.cs" />
      <Compile Include="Assets\Scripts\BackTo.cs" />
      <Compile Include="Assets\Scripts\ButtonStateController.cs" />
+     <Compile Include="Assets\Scripts\CustomMediaPlayerCtrl.cs" />
      <Compile Include="Assets\Scripts\CustomScrollRect.cs" />
      <Compile Include="Assets\Scripts\Inspector Script\UIControllerInspectorEditor.cs" />
      <Compile Include="Assets\Scripts\ResizeUI.cs" />
