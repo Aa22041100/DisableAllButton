@@ -59,6 +59,7 @@
      <Compile Include="Assets\Scripts\CustomMediaPlayerCtrl.cs" />
      <Compile Include="Assets\Scripts\CustomScrollRect.cs" />
      <Compile Include="Assets\Scripts\Inspector Script\UIControllerInspectorEditor.cs" />
+     <Compile Include="Assets\Scripts\RTSPTestScene\RTSPBackTo.cs" />
      <Compile Include="Assets\Scripts\ResizeUI.cs" />
      <Compile Include="Assets\Scripts\ScrollBackgroundScript.cs" />
      <Compile Include="Assets\Scripts\UIManager.cs" />
