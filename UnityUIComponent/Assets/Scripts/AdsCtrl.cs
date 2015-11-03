@@ -63,7 +63,7 @@ public class AdsCtrl : MonoBehaviour {
 
 		// Play video
 	}
-	bool Inited = false;
+	bool Inited = false; 
 	void AddToPlaylist(string url) {
 		this.PlayList.Add(url);
 		if(!Inited)
