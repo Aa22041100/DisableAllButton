@@ -1,11 +1,11 @@
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2008
-
-Project("{A3F52EF4-61D5-E2BB-E913-F0F6483CEC58}") = "UnityUIComponent", "Assembly-CSharp-firstpass.csproj", "{B51677B2-FDC1-206C-434C-B4754C698C38}"
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityUIComponent.CSharp.Plugins", "UnityUIComponent.CSharp.Plugins.csproj", "{5F597F29-885D-09F7-BDF2-94CD097CF635}"
 EndProject
-Project("{A3F52EF4-61D5-E2BB-E913-F0F6483CEC58}") = "UnityUIComponent", "Assembly-CSharp.csproj", "{3A790E65-1081-9538-3FE7-7B95A915591D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityUIComponent.CSharp", "UnityUIComponent.CSharp.csproj", "{3F8594A7-8402-A7C0-69F5-CAE2202C0A5D}"
 EndProject
-Project("{A3F52EF4-61D5-E2BB-E913-F0F6483CEC58}") = "UnityUIComponent", "Assembly-CSharp-Editor.csproj", "{1A584AE0-8BE1-231A-AF0E-99DB4A0A6412}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityUIComponent.CSharp.Editor", "UnityUIComponent.CSharp.Editor.csproj", "{AAAAE8FD-0EB1-6F74-C9BD-C84451B2561F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,23 +13,29 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B51677B2-FDC1-206C-434C-B4754C698C38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B51677B2-FDC1-206C-434C-B4754C698C38}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B51677B2-FDC1-206C-434C-B4754C698C38}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B51677B2-FDC1-206C-434C-B4754C698C38}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3A790E65-1081-9538-3FE7-7B95A915591D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3A790E65-1081-9538-3FE7-7B95A915591D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3A790E65-1081-9538-3FE7-7B95A915591D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3A790E65-1081-9538-3FE7-7B95A915591D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1A584AE0-8BE1-231A-AF0E-99DB4A0A6412}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1A584AE0-8BE1-231A-AF0E-99DB4A0A6412}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1A584AE0-8BE1-231A-AF0E-99DB4A0A6412}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1A584AE0-8BE1-231A-AF0E-99DB4A0A6412}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F597F29-885D-09F7-BDF2-94CD097CF635}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F597F29-885D-09F7-BDF2-94CD097CF635}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F597F29-885D-09F7-BDF2-94CD097CF635}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F597F29-885D-09F7-BDF2-94CD097CF635}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F8594A7-8402-A7C0-69F5-CAE2202C0A5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F8594A7-8402-A7C0-69F5-CAE2202C0A5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F8594A7-8402-A7C0-69F5-CAE2202C0A5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F8594A7-8402-A7C0-69F5-CAE2202C0A5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAAAE8FD-0EB1-6F74-C9BD-C84451B2561F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAAAE8FD-0EB1-6F74-C9BD-C84451B2561F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAAAE8FD-0EB1-6F74-C9BD-C84451B2561F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAAAE8FD-0EB1-6F74-C9BD-C84451B2561F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
+<<<<<<< HEAD
 																																																																																																																				GlobalSection(MonoDevelopProperties) = preSolution
+=======
+<<<<<<< HEAD
+=======
+																																																																																																																		GlobalSection(MonoDevelopProperties) = preSolution
+>>>>>>> bc0c3ab117f6a735efed6ccde13fa6a0c31656ac
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1
@@ -49,4 +55,5 @@ Global
 		$3.scope = text/plain
 	EndGlobalSection
 
+>>>>>>> 5c5b7a56a264b6a6ba3d99f3bb5a8c5fc61dbdb0
 EndGlobal
