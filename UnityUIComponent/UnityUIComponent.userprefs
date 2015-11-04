@@ -1,9 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/EasyMovieTexture/Scripts/MediaPlayerCtrl.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/AdsCtrl.cs">
     <Files>
-      <File FileName="Assets/Scripts/AdsCtrl.cs" Line="74" Column="17" />
+      <File FileName="Assets/Scripts/AdsCtrl.cs" Line="83" Column="1" />
       <File FileName="Assets/EasyMovieTexture/Scripts/MediaPlayerCtrl.cs" Line="840" Column="5" />
+      <File FileName="Assets/Scripts/RTSPTestScene/RTSPBackTo.cs" Line="17" Column="36" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
